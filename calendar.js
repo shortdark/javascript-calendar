@@ -19,7 +19,7 @@ let dateOneDay = firstDayOfMonth.getDay();
 let numDays = numberOfDaysInMonth();
 
 
-function coordMap() {
+function calendarMonth () {
     writeTitle(currentMonthWord);
     writeTableHead();
     writeCalendarSquares();

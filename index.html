@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width">
 
 	<title>Javascript Calendar</title>
-	<script src='calendar.js'></script>
 	
 	<style>
 		h1, h2, p, ul {
@@ -18,7 +17,7 @@
 			width: 500px;
 			display: block;
 			margin: 0 auto;
-			padding: 0px;
+			padding: 0;
 		}
 		img {
 			width: 50px;
@@ -32,16 +31,19 @@
 
 <p>
 	I originally wrote this javascript calendar in 2001.
-	The original code is <a href="https://github.com/shortdark/javascript-calendar" target="_blank">here</a>.
+	The <a href="https://github.com/shortdark/javascript-calendar" target="_blank">original code</a> looks like a version of the original javascript with the HTML updated somewhat in 2016.
+	This code you are looking at is from the <a href="https://github.com/shortdark/javascript-calendar/tree/2021" target="_blank">2021 refactor</a>.
 	The javascript prints the month then draws the visual calendar beneath with today's day highlighted.
-	At one point this code would have been able to go forwards and backwards through the months, but the code I found was just displaying the current month.
 </p>
 <p>
-	Having just re-formatted slightly, it's looking better than it was.
+	At one point this code was able to go forwards and backwards through the months.
+	I can't remember but maybe just the next and previous month.
+	The code I found was just displaying the current month.
 </p>
 
+<script src='calendar.js'></script>
 <script>
-	coordMap();
+	calendarMonth();
 </script>
 
 </body>
