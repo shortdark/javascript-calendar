@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width">
 
 	<title>Javascript Calendar</title>
-	<script language=javascript src='calendar.js'></script>
+	<script src='calendar.js'></script>
 	
 	<style>
-		h1, h2, p {
+		h1, h2, p, ul {
 			width: 500px;
 			display: block;
 			margin: 0 auto;
@@ -20,94 +20,29 @@
 			margin: 0 auto;
 			padding: 0px;
 		}
+		img {
+			width: 50px;
+		}
 	</style>
 
 </head>
 <body>
 	
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-2106882-1', 'shortdark.net');
-  ga('send', 'pageview');
-
-</script>
-
-<h1>javascript calendar...</h1>
+<h1>Javascript Calendar</h1>
 
 <p>
-	I made this javascript calendar in 2001. 
+	I originally wrote this javascript calendar in 2001.
+	The original code is <a href="https://github.com/shortdark/javascript-calendar" target="_blank">here</a>.
 	The javascript prints the month then draws the visual calendar beneath with today's day highlighted.
+	At one point this code would have been able to go forwards and backwards through the months, but the code I found was just displaying the current month.
 </p>
 <p>
-	I'd make this differently if I did it today but it's interesting to look back on.
-	The leap year bit is a bit messy and that part won't work for any leap years after 2008 (it will have missed 2012).
-	There are quite a few aspects of programming here: arrays, functions and logic.
-	It's all a bit long-winded and I'm sure there are neater ways to do it but it works fine.
-	The next stage would be to work on the code and get it to be a "date" input on a form (without the images).
-	It would also be good to get it so you can skip between different months.
-</p>
-<p>
-	The original calendar was built inside a table with each image inside a TD element, at some stage (2006 ?) it looks like I'd put it inside DIVs and lost the day headings at the top.
-	Now, the day headings are back and it looks like it did in 2001.
-</p>
-<p>
-	I found the description, below, from an old website.
-	As you can see I'm using the "Royal we"...
+	Having just re-formatted slightly, it's looking better than it was.
 </p>
 
-<p>
-	<em>
-		We created the javaScript calendar in 2001. 
-		It took one person 3 hours to make. 
-		Aswell as showing this month you could also see last month and next month. 
-		This calendar is a static (non-moving) example of dynamic (changes every day / month) scripting.
-		The calendar shows this month and today's date is highlighted in white (uses the date on your PC clock).
-	</em>
-</p>
-
-
-
-<script language="javascript">
-<!--
-
-document.writeln("<h2>" + dateMonthArray[dateMonth] + " " + dateYear + "</h2>");
-
-//-->
+<script>
+	coordMap();
 </script>
-
-
-<div>
-<img src="images/sun.gif" border=0 width=50 height=25 alt="sun">
-<img src="images/mon.gif" border=0 width=50 height=25 alt="mon">
-<img src="images/tue.gif" border=0 width=50 height=25 alt="tue">
-<img src="images/wed.gif" border=0 width=50 height=25 alt="wed">
-<img src="images/thu.gif" border=0 width=50 height=25 alt="thu">
-<img src="images/fri.gif" border=0 width=50 height=25 alt="fri">
-<img src="images/sat.gif" border=0 width=50 height=25 alt="sat">
-</div>
-
-<script language="javascript">
-<!--
-
-coordMap(getNumDays, getDateOneDay);
-
-document.writeln("<p>");
-document.writeln(dateDayArray[dateDay]);
-document.writeln(dateDate + dateEndArray[dateDate]);
-document.writeln(dateMonthArray[dateMonth]);
-document.writeln(dateYear);
-document.writeln("</p>");
-
-//-->
-</script>
-
-
-
-
 
 </body>
 </html>
