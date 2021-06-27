@@ -19,7 +19,7 @@ let numDays = numberOfDaysInMonth();
 
 
 function calendarMonth () {
-    writeTitle(currentMonthWord);
+    writeTitle(currentMonthWord + " " + currentYear);
     writeTableHead();
     writeCalendarSquares();
     writeTitle();
