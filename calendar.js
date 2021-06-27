@@ -5,8 +5,7 @@ let dateEndNd = [2, 22]
 let dateEndRd = [3, 23]
 let thirtyDayMonths = [3, 5, 8, 10];
 
-let outputText;
-let dayInWords, shortenedDay;
+let outputText, dayInWords, shortenedDay;
 
 let todayDate = new Date()
 let currentDate = todayDate.getDate()
@@ -72,13 +71,11 @@ function getDateEnd() {
 }
 
 function writeDaySquare(i, thisDay) {
-    if (i < dateOneDay) {
+    if (i < dateOneDay || thisDay > numDays) {
         outputText = "<img src='images/blank.gif'  alt=''>";
     } else if (thisDay === currentDate) {
         outputText = "<img src='images/today" + thisDay + ".gif'  alt='" + thisDay + "'>";
         thisDay++;
-    } else if (thisDay > numDays) {
-        outputText = "<img src='images/blank.gif'  alt=''>";
     } else {
         outputText = "<img src='images/day" + thisDay + ".gif'  alt='" + thisDay + "'>";
         thisDay++;
